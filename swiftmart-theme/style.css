@@ -1,0 +1,140 @@
+/*
+Theme Name: SwiftMart
+Theme URI: https://example.com/swiftmart
+Author: SwiftMart Dev
+Author URI: https://example.com
+Description: Custom WordPress + WooCommerce theme for SwiftMart, an electronics accessories store. Modern, tech-forward, mobile-first.
+Version: 1.0.0
+Requires at least: 6.4
+Tested up to: 6.5
+Requires PHP: 8.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: swiftmart
+Tags: e-commerce, woocommerce, custom-theme, responsive
+*/
+
+:root{
+  --sm-navy:#1A3C6E;
+  --sm-blue:#2E6DB4;
+  --sm-bg:#ffffff;
+  --sm-fg:#0f172a;
+  --sm-muted:#64748b;
+  --sm-border:#e2e8f0;
+  --sm-radius:10px;
+  --sm-shadow:0 6px 24px rgba(26,60,110,.08);
+  --sm-container:1200px;
+  --sm-font:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sm-font);color:var(--sm-fg);background:var(--sm-bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--sm-blue);text-decoration:none}
+a:hover{color:var(--sm-navy)}
+.container{max-width:var(--sm-container);margin:0 auto;padding:0 20px}
+.btn{display:inline-block;padding:12px 24px;border-radius:var(--sm-radius);background:var(--sm-blue);color:#fff;font-weight:600;transition:.2s;border:none;cursor:pointer}
+.btn:hover{background:var(--sm-navy);color:#fff;transform:translateY(-1px)}
+.btn-outline{background:transparent;border:2px solid #fff;color:#fff}
+
+/* HEADER */
+.site-header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid var(--sm-border);box-shadow:0 1px 8px rgba(0,0,0,.04)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+.site-logo{font-size:1.5rem;font-weight:800;color:var(--sm-navy);letter-spacing:-.02em}
+.site-logo span{color:var(--sm-blue)}
+.main-nav ul{list-style:none;display:flex;gap:28px;margin:0;padding:0}
+.main-nav a{color:var(--sm-fg);font-weight:500}
+.main-nav a:hover{color:var(--sm-blue)}
+.header-actions{display:flex;align-items:center;gap:16px}
+.mini-cart{position:relative;display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--sm-radius);background:#f1f5f9;color:var(--sm-navy);font-weight:600}
+.mini-cart:hover{background:var(--sm-navy);color:#fff}
+.cart-count{background:var(--sm-blue);color:#fff;border-radius:999px;min-width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;padding:0 6px}
+.menu-toggle{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer;color:var(--sm-navy)}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--sm-navy) 0%,var(--sm-blue) 100%);color:#fff;padding:90px 0;text-align:center}
+.hero h1{font-size:clamp(2rem,5vw,3.5rem);margin:0 0 16px;font-weight:800;letter-spacing:-.02em}
+.hero p{font-size:1.2rem;opacity:.9;max-width:640px;margin:0 auto 32px}
+.hero-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* SECTIONS */
+.section{padding:72px 0}
+.section-title{font-size:2rem;font-weight:700;color:var(--sm-navy);margin:0 0 8px;text-align:center}
+.section-sub{text-align:center;color:var(--sm-muted);margin:0 0 40px}
+
+/* GRIDS */
+.grid{display:grid;gap:24px}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+
+.cat-card,.post-card{background:#fff;border:1px solid var(--sm-border);border-radius:var(--sm-radius);overflow:hidden;transition:.2s;box-shadow:var(--sm-shadow)}
+.cat-card:hover,.post-card:hover{transform:translateY(-4px);border-color:var(--sm-blue)}
+.cat-card img,.post-card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.cat-card-body,.post-card-body{padding:18px}
+.cat-card h3,.post-card h3{margin:0 0 6px;font-size:1.05rem;color:var(--sm-navy)}
+.post-meta{font-size:.85rem;color:var(--sm-muted);margin-bottom:8px}
+
+/* FOOTER */
+.site-footer{background:var(--sm-navy);color:#cbd5e1;padding:60px 0 20px;margin-top:60px}
+.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-bottom:32px}
+.footer-col h4{color:#fff;margin:0 0 14px;font-size:1rem}
+.footer-col ul{list-style:none;padding:0;margin:0}
+.footer-col li{margin-bottom:8px}
+.footer-col a{color:#cbd5e1}
+.footer-col a:hover{color:#fff}
+.newsletter input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid #334155;background:#0f2547;color:#fff;margin-bottom:10px}
+.footer-bottom{border-top:1px solid #334155;padding-top:20px;text-align:center;font-size:.9rem;color:#94a3b8}
+
+/* 404 */
+.error-404{text-align:center;padding:100px 0}
+.error-404 h1{font-size:6rem;color:var(--sm-navy);margin:0}
+.error-404 p{font-size:1.2rem;color:var(--sm-muted)}
+.error-404 form{max-width:420px;margin:24px auto}
+.error-404 input[type=search]{width:100%;padding:12px 14px;border:1px solid var(--sm-border);border-radius:var(--sm-radius)}
+
+/* BLOG */
+.post-single{max-width:780px;margin:0 auto;padding:40px 20px}
+.post-single h1{color:var(--sm-navy)}
+.post-single .post-meta{margin-bottom:24px}
+.related-posts{margin-top:60px}
+
+/* WOOCOMMERCE OVERRIDES */
+.woocommerce ul.products{display:grid !important;grid-template-columns:repeat(4,1fr);gap:24px;margin:0 !important}
+.woocommerce ul.products li.product{width:auto !important;margin:0 !important;float:none !important;background:#fff;border:1px solid var(--sm-border);border-radius:var(--sm-radius);padding:16px;transition:.2s}
+.woocommerce ul.products li.product:hover{border-color:var(--sm-blue);box-shadow:var(--sm-shadow)}
+.woocommerce ul.products li.product .price{color:var(--sm-navy);font-weight:700}
+.woocommerce .button,.woocommerce a.button,.woocommerce button.button{background:var(--sm-blue) !important;color:#fff !important;border-radius:var(--sm-radius) !important;font-weight:600 !important;padding:10px 18px !important}
+.woocommerce .button:hover{background:var(--sm-navy) !important}
+.woocommerce-message,.woocommerce-info{border-top-color:var(--sm-blue) !important}
+.woocommerce div.product .product_title{color:var(--sm-navy)}
+.swiftmart-specs{margin-top:20px;padding:18px;background:#f8fafc;border-left:4px solid var(--sm-blue);border-radius:6px}
+.swiftmart-specs h3{margin-top:0;color:var(--sm-navy)}
+.swiftmart-specs strong{color:var(--sm-navy)}
+
+.shop-layout{display:grid;grid-template-columns:240px 1fr;gap:32px;padding:40px 0}
+.shop-sidebar h3{color:var(--sm-navy);font-size:1rem;margin-top:24px}
+.shop-sidebar ul{list-style:none;padding:0}
+.shop-sidebar li{padding:6px 0;border-bottom:1px solid var(--sm-border)}
+
+/* RESPONSIVE */
+@media (max-width:1024px){
+  .woocommerce ul.products{grid-template-columns:repeat(2,1fr) !important}
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .shop-layout{grid-template-columns:1fr}
+}
+@media (max-width:768px){
+  .main-nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;border-bottom:1px solid var(--sm-border);padding:20px}
+  .main-nav.open{display:block}
+  .main-nav ul{flex-direction:column;gap:14px}
+  .menu-toggle{display:block}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+  .grid-3,.grid-2{grid-template-columns:1fr}
+  .hero{padding:60px 0}
+}
+@media (max-width:480px){
+  .woocommerce ul.products{grid-template-columns:1fr !important}
+  .footer-grid{grid-template-columns:1fr}
+  .grid-4{grid-template-columns:1fr}
+}
