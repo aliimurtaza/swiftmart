@@ -1,4 +1,4 @@
-# 🛍️ SwiftMart — WordPress + WooCommerce Project
+#SwiftMart — WordPress + WooCommerce Project
 
 SwiftMart is a modern eCommerce website built using WordPress and WooCommerce. It is designed for selling electronics and accessories with a clean UI, fast performance, and responsive shopping experience.
 
@@ -6,7 +6,7 @@ Brand Colors: Deep Navy #1A3C6E | Electric Blue #2E6DB4
 
 ---
 
-## 🌐 Project Overview
+##Project Overview
 
 SwiftMart is a custom WordPress theme integrated with WooCommerce to provide a complete online shopping experience including products, cart, checkout, and blog system.
 
@@ -14,7 +14,7 @@ This project focuses on UI design, performance, and structured eCommerce functio
 
 ---
 
-## ✨ Features
+##Features
 
 - Custom homepage (Hero section, Featured Products, Categories, Blog section)
 - WooCommerce shop and product pages
@@ -27,7 +27,7 @@ This project focuses on UI design, performance, and structured eCommerce functio
 
 ---
 
-## ⚙️ Setup Instructions
+##Setup Instructions
 
 ### Requirements:
 - WordPress 6.4+
@@ -35,7 +35,7 @@ This project focuses on UI design, performance, and structured eCommerce functio
 - MySQL 8+
 - Local server (XAMPP / LocalWP / Laragon)
 
-### Installation Steps:
+###Installation Steps:
 
 1. Copy `swiftmart-theme` into:
 2. 
@@ -55,7 +55,7 @@ Settings → Permalinks → Save Changes
 
 ---
 
-## 📦 Plugins Used
+## Plugins Used
 
 - WooCommerce (eCommerce system)
 - Advanced Custom Fields (custom product fields)
@@ -67,24 +67,24 @@ Settings → Permalinks → Save Changes
 
 ---
 
-## 🧩 Custom Features
+##Custom Features
 
-### 📰 Tech Guides
+###Tech Guides
 Custom Post Type for tech tutorials and guides with categories.
 
-### 📦 Product System
+###Product System
 - Product title, price, description, image
 - ACF fields for specifications
 - Clean WooCommerce product layout
 
-### 🛒 WooCommerce Integration
+###WooCommerce Integration
 - Fully plugin-based cart system
 - Checkout and order management via WooCommerce
 - Styled product cards and shop grid
 
 ---
 
-## 🔒 Security Features
+##Security Features
 
 - Login attempt limitation via plugin
 - Secure login URL (via plugin)
@@ -116,6 +116,6 @@ swiftmart-theme/
 
 ---
 
-## 🚀 Final Note
+##Final Note
 
 SwiftMart is a modern WooCommerce-based eCommerce theme focused on design, performance, and scalability. All eCommerce functionality (cart, checkout, orders.
